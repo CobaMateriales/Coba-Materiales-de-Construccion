@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COBA Materiales de Construcción</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .productos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .producto {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .producto:hover {
+      transform: scale(1.03);
+    }
+    .producto img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #222;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>COBA Materiales de Construcción</h1>
+    <p>Todo lo que necesitas para tu obra, en un solo lugar</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#cotizacion">Cotización</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenido a COBA</h2>
+    <p>Somos tu tienda confiable de materiales de construcción. Contamos con productos de alta calidad y el mejor servicio en la región.</p>
+  </section>
+
+  <section id="productos">
+    <h2>Productos</h2>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150?text=Cemento" alt="Cemento">
+        <h3>Cemento</h3>
+        <p>Sacos de cemento de alta resistencia para cualquier tipo de construcción.</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150?text=Varilla" alt="Varilla">
+        <h3>Varilla</h3>
+        <p>Varillas de acero para estructuras resistentes y duraderas.</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150?text=Grava+y+Arena" alt="Grava y Arena">
+        <h3>Grava y Arena</h3>
+        <p>Materiales áridos ideales para mezcla y cimentación.</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150?text=Block" alt="Block">
+        <h3>Block</h3>
+        <p>Block hueco y sólido para construcción de muros resistentes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>COBA Materiales de Construcción nació con el compromiso de brindar materiales de calidad a precios accesibles, apoyando a nuestros clientes en cada etapa de su proyecto. Contamos con personal capacitado y atención personalizada.</p>
+  </section>
+
+  <section id="cotizacion">
+    <h2>Solicita una Cotización</h2>
+    <form action="#" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <input type="tel" name="telefono" placeholder="Tu teléfono" required>
+      <textarea name="mensaje" rows="5" placeholder="¿Qué productos necesitas?" required></textarea>
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Dirección:</strong> Calle Principal #123, Tu Ciudad, Estado</p>
+    <p><strong>Teléfono:</strong> 123-456-7890</p>
+    <p><strong>WhatsApp:</strong> 749 101 2685</p>
+    <p><strong>Facebook:</strong> <a href="https://www.facebook.com" target="_blank">COBA Materiales</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 COBA Materiales de Construcción. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
