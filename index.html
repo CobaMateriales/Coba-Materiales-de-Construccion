@@ -5,18 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COBA Materiales de Construcción</title>
   <style>
-<img src="coba3.png" alt="Logo de mi sitio web" width="100" height="50">
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #1d365c;
+      background-color: #ffffff;
       color: #333;
     }
     header {
-      background-color: #222;
-      color: #fff;
+      background-color: #ffffff;
+      color: #1e3a5f;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .header-text {
+      flex: 1;
+    }
+    .header-text h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #1e3a5f;
+    }
+    .header-text p {
+      margin: 5px 0 0;
+      color: #f37021;
+      font-size: 1.1em;
+    }
+    header img {
+      max-width: 200px;
+      height: auto;
     }
     nav {
       background-color: #444;
@@ -88,13 +107,21 @@
       nav {
         flex-direction: column;
       }
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>COBA Materiales de Construcción</h1>
-    <p>Todo lo que necesitas para tu obra, en un solo lugar</p>
+    <div class="header-text">
+      <h1>COBA Materiales de Construcción</h1>
+      <p>Todo lo que necesitas para tu obra, en un solo lugar</p>
+    </div>
+    <img src="coba3.png" alt="Logo COBA">
   </header>
 
   <nav>
